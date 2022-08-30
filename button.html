@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>button </title>
+    <style>
+
+.b{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+         border-style: double;
+      } 
+      .bb{
+
+        color:green;
+      }
+      </style>
+
+</head>
+<body>
+
+    <p class="bb">my name</p>
+    <p class="bb">my address</p>
+    
+    <p class="bb">my name</p>
+  
+
+    <br>
+    <button class ="b" onclick="myFunction()"> click </button>
+
+<button class ="b" onclick="myFunction()"> click </button>
+
+    
+    
+    <script> 
+    function myFunction()
+    {
+
+        var x=document.getElementsByClassName("bb");
+        console.log(x.length);
+        for(var i=0; i<x.length;i++)
+      { 
+       x[i].style.display="none";
+
+        }
+    }
+    
+    
+    </script>
+</html>
