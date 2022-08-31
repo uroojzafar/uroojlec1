@@ -1,89 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    
     <style>
-        * {
-          box-sizing: border-box;
+        section{
+            display: flex;
+            background-color: rgb(83, 88, 87);
+            padding: 10px;
         }
-        
-        body {
-          font-family: Arial, Helvetica, sans-serif;
+        img{
+            width: 10vw;
+            height: 8vw;
         }
-        
-      
-        header {
-          background-color: #666;
-          padding: 30px;
-          text-align: center;
-          font-size: 20px;
-          color: black;
+        .name{
+            background-color: antiquewhite;
+            text-align: center;
+            margin-left: 100px;
+            width: 10vw;
         }
-        
-        
-        nav {
-          float: left;
-          width: 30%;
-          height: 300px;
-          background: #ccc;
-          padding: 20px;
+        .para{
+            text-align: center;
         }
-        
-        
-        nav ul {
-          list-style-type: none;
-          padding: 0;
+        nav ul{
+            display: flex;
         }
-        
-        article {
-          float: left;
-          padding: 10px;
-          width: 70%;
-          background-color: #f1f1f1;
-          height: 300px; 
+        nav ul li{
+            list-style: none;
+            padding: 10px;
         }
-        
-     
-        section::after {
-          content: "";
-          display: table;
-          clear: both;
+        .nav{
+            background-color: rgb(130, 182, 126);
         }
-        
-       
-        
-        h1{
-          background-color: silver;
-        }
-         img {
-          
-          border-radius: 100px;
-         }
 
-        
-</style>
+    </style>
+</head>
 
-<header>
-    
-      <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbme2pi877NGk7MU3CgcUbCXq1q4WgO7lmDQ&usqp=CAU" width="100" height="100">
-  
-    </header>
-    
+<body>
+
     <section>
-      <nav>
-        <ul>
-          <p> <b> Address: </b>  City: Trarkhal, Post Office:Trarkhal, District: Shudnoti.</p>
-         
-          
+        <div class="img">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+        <div class="para">
+            <div class="name">
+                <p>My name is XYZ</p>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Conatct</li>
 
-          
-        </ul>
-      </nav>
-      
-      </section>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </section>
 </body>
+
 </html>
